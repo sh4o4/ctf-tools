@@ -1,95 +1,27 @@
-# Awesome CTF resources [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-
-A list of [Capture The Flag](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) (CTF) frameworks, libraries, resources and software for started/experienced CTF players 🚩 
-
-Any contribution is welcome, send me a PR! ❤️
-
-*-The software and resources collected do not belong to me and have been compiled for educational purposes only-*
-
-<p align="center">
-<img src="https://i.imgur.com/d4aShjQ.jpg" width="600" height="300" >
-</p>
+# 🛠️ CTF Tools Collection
 
 ## Contents
 
- - [Create](#0x00-create)
-    - [Platforms](#platforms)
-    - [Forensics](#forensics)
-    - [Steganography](#steganography)
-    - [Web](#web)
+ - [Cryptography](#closed-lock-with-key-cryptography)
+ - [Exploiting / Pwn](#exploiting--pwn)
+ - [Forensics](#forensics-1)
+ - [Misc](#misc)
+ - [Reverse](#reversing)
+ - [Steganography](#steganography-1)
+ - [Web](#web-1)
+ - [Osint](#osint)
 
- - [Solve](#0x01-solve)
-    - [Cryptography](#cryptography)
-    - [Exploiting / Pwn](#exploiting--pwn)
-    - [Forensics](#forensics-1)
-    - [Misc](#misc)
-    - [Reversing](#reversing)
-    - [Steganography](#steganography-1)
-    - [Web](#web-1)
-
- - [Resources](#0x02-resources)
-    - [Online Platforms](#online-platforms)
-    - [Collaborative Tools](#collaborative-tools)
-    - [Writeups Repositories](#writeups-repositories)
-    - [Courses](#courses)
-
- - [Bibliography](#0x03-bibliography)
-
-
-# 0x00. Create
-
-*Tools used for creating CTF challenges*
-
-## Platforms
-
-*Frameworks that can be used to host a CTF*
-
- - [CTFd](https://github.com/CTFd/CTFd) - Platform to host jeopardy style CTFs.
- - [FBCTF](https://github.com/facebookarchive/fbctf) - Facebook CTF platform to host Jeopardy and "King of the Hill" CTF competitions.
- - [HackTheArch](https://github.com/mcpa-stlouis/hack-the-arch) - Scoring server for CTF competitions.
- - [kCTF](https://github.com/google/kctf) - Kubernetes-based infrastructure for CTF competitions.
- - [LibreCTF](https://github.com/easyctf/librectf) - CTF platform from EasyCTF.
- - [Mellivora](https://github.com/Nakiami/mellivora) - CTF engine written in PHP.
- - [NightShade](https://github.com/UnrealAkama/NightShade) - Simple CTF framework.
- - [picoCTF](https://github.com/picoCTF/picoCTF) - Infrastructure used to run picoCTF.
- - [rCTF](https://github.com/redpwn/rctf) - CTF platform maintained by the [redpwn](https://github.com/redpwn/rctf) CTF team.
- - [RootTheBox](https://github.com/moloch--/RootTheBox) - CTF scoring engine for wargames.
- - [ImaginaryCTF](https://github.com/Et3rnos/ImaginaryCTF) - Platform to host CTFs.
-
-## Forensics
-
-*Tools used to create Forensics challenges*
-
- - [Belkasoft RAM Capturer](https://belkasoft.com/ram-capturer) - Volatile Memory Acquisition Tool.
- - [Dnscat2](https://github.com/iagox86/dnscat2) - Hosts communication through DNS.
- - [Magnet AXIOM 2.0](https://www.magnetforensics.com/resources/magnet-axiom-2-0-memory-analysis/) - Artifact-centric DFIR tool.
- - [Registry Dumper](http://www.kahusecurity.com/posts/registry_dumper_find_and_dump_hidden_registry_keys.html) - Tool to dump Windows Registry.
-
-## Steganography
-
-*Tools used to create Stego challenges*
-
-Check [solve section for steganography](#steganography-1).
-
-## Web
-
-*Tools used to create Web challenges*
-
- - [Metasploit JavaScript Obfuscator](https://github.com/rapid7/metasploit-framework/wiki/How-to-obfuscate-JavaScript-in-Metasploit) - How to obfuscate JavaScript in Metasploit.
-
-# 0x01. Solve
-
-## Cryptography
-
-*Tools used for solving Crypto challenges*
+# :closed_lock_with_key: Cryptography
 
  - [Base65536](https://github.com/qntm/base65536) - Unicode's answer to Base64.
  - [Braille Translator](https://www.branah.com/braille-translator) - Translate from braille to text.
  - [Ciphey](https://github.com/Ciphey/Ciphey) - Tool to automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes.
+ - [Crackstation](https://crackstation.net/) - Hash cracker (database).
  - [CyberChef](https://gchq.github.io/CyberChef/) - A web app for encryption, encoding, compression and data analysis.
  - [Cryptii](https://cryptii.com/) - Modular conversion, encoding and encryption online.
  - [dCode.fr](https://www.dcode.fr/tools-list#cryptography) - Solvers for Crypto, Maths and Encodings online.
  - [Decodify](https://github.com/s0md3v/Decodify) - Detect and decode encoded strings, recursively.
+ - [DLPSolver](https://github.com/Vozec/DLP-Solver) - This tool is used to solve the discrete logarithm problem
  - [Enigma Machine](https://summersidemakerspace.ca/projects/enigma-machine/) - Universal Enigma Machine Simulator.
  - [FeatherDuster](https://github.com/nccgroup/featherduster) - An automated, modular cryptanalysis tool.
  - [Galois](http://web.eecs.utk.edu/~jplank/plank/papers/CS-07-593/) - A fast galois field arithmetic library/toolkit.
@@ -104,16 +36,14 @@ Check [solve section for steganography](#steganography-1).
  - [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) - RSA multi attacks tool.
  - [RSATool](https://github.com/ius/rsatool) - Tool to to calculate RSA and RSA-CRT parameter.
  - [Rumkin Cipher Tools](http://rumkin.com/tools/cipher/) - Collection of ciphhers/encoders tools.
+ - [SageMath](https://www.sagemath.org/) - SageMath is a free open-source mathematics software system, it has a wide cryptographic library (Finite fields, elliptic curves, and so on)
  - [Vigenere Solver](https://www.guballa.de/vigenere-solver) - Online tool that breaks Vigenère ciphers without knowing the key.
  - [XOR Cracker](https://wiremask.eu/tools/xor-cracker/) - Online XOR decryption tool able to guess the key length and the cipher key to decrypt any file.
  - [XORTool](https://github.com/hellman/xortool) - A tool to analyze multi-byte xor cipher.
  - [yagu](https://sourceforge.net/projects/yafu/) - Automated integer factorization.
- - [Crackstation](https://crackstation.net/) - Hash cracker (database).
  - [Online Encyclopedia of Integer Sequences](https://oeis.org/) - OEIS: The On-Line Encyclopedia of Integer Sequences
 
-## Exploiting / Pwn
-
-*Tools used for solving Pwn challenges*
+# 👨🏻‍💻 Exploiting / Pwn
 
  - [afl](https://lcamtuf.coredump.cx/afl/) - Security-oriented fuzzer.
  - [honggfuzz](https://github.com/google/honggfuzz) - Security oriented software fuzzer. Supports evolutionary, feedback-driven fuzzing based on code coverage.
@@ -124,9 +54,7 @@ Check [solve section for steganography](#steganography-1).
  - [Ropper](https://github.com/sashs/Ropper) - Display information about files in different file formats and find gadgets to build rop chains for different architectures.
  - [Shellcodes Database](http://shell-storm.org/shellcode/) - A massive shellcodes database.
 
-## Forensics
-
-*Tools used for solving Forensics challenges*
+# 📝 Forensics
 
  - [A-Packets](https://apackets.com/) - Effortless PCAP File Analysis in Your Browser.
  - [Autopsy](https://www.autopsy.com/) - End-to-end open source digital forensics platform.
@@ -153,9 +81,7 @@ Check [solve section for steganography](#steganography-1).
  - [Wireshark](https://www.wireshark.org/) - Tool to analyze pcap or pcapng files.
  - [X-Ways](https://www.x-ways.net/forensics/index-m.html) - Advanced work environment for computer forensic examiners.
 
-## Misc
-
-*Tools used for solving Misc challenges*
+# 🕹️ Misc
 
  - [boofuzz](https://github.com/jtpereyda/boofuzz) - Network Protocol Fuzzing for Humans.
  - [Veles](https://codisec.com/veles/) - Binary data analysis and visualization tool.
@@ -188,9 +114,7 @@ Check [solve section for steganography](#steganography-1).
  - [Intezer Analyze](https://analyze.intezer.com/) - Malware analysis platform.
  - [Triage](https://tria.ge/) - State-of-the-art malware analysis sandbox designed for cross-platform support.
 
-## Reversing
-
-*Tools used for solving Reversing challenges*
+# ⚙️ Reverse
 
  - [Androguard](https://github.com/androguard/androguard) - Androguard is a full python tool to play with Android files.
  - [Angr](https://github.com/angr/angr) - A powerful and user-friendly binary analysis platform.
@@ -204,8 +128,8 @@ Check [solve section for steganography](#steganography-1).
  - [Demovfuscator](https://github.com/kirschju/demovfuscator) - A work-in-progress deobfuscator for movfuscated binaries.
  - [Disassembler.io](https://onlinedisassembler.com/static/home/index.html) - Disassemble On Demand. 
 A lightweight, online service for when you don’t have the time, resources, or requirements to use a heavier-weight alternative.
- - [dnSpy](https://github.com/dnSpy/dnSpy) - .NET debugger and assembly editor.
- - [EasyPythonDecompiler](https://sourceforge.net/projects/easypythondecompiler/) - A small .exe GUI application that will "decompile" Python bytecode, often seen in .pyc extension.
+ - [dnSpyEx](https://github.com/dnSpyEx/dnSpy) - Modern fork of dnSpy, .NET debugger and assembly editor.
+ - [dogBolt](https://dogbolt.org/) - Online decompiler which shows equivalent C-like output of decompiled programs from many popular decompilers (angr, Binary Ninja, Boomerang, dewolf, Ghidra, Hex-Rays (IDA Pro), REC Studio, Reko, Relyze, RetDec, rev.ng, Snowman)
  - [Frida](https://github.com/frida/) - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
  - [GDB](https://www.gnu.org/software/gdb/) - The GNU Project debugger.
  - [GEF](https://github.com/hugsy/gef) - A modern experience for GDB with advanced debugging features for exploit developers & reverse engineers.
@@ -213,8 +137,10 @@ A lightweight, online service for when you don’t have the time, resources, or 
  - [Hopper](https://www.hopperapp.com/) - Reverse engineering tool (disassembler) for OSX and Linux.
  - [IDA Pro](https://hex-rays.com/ida-pro/) - Most used Reversing software.
  - [Jadx](https://github.com/skylot/jadx) - Command line and GUI tools for producing Java source code from Android Dex and Apk files.
- - [Java Decompilers](http://www.javadecompilers.com/) - An online decompiler for Java and Android APKs.
+ - [JEB](https://www.pnfsoftware.com/) - JEB is our state-of-the-art decompiler for Android apps, Windows and Linux malware, Arm and x86 code, MIPS and RISC-V programs, Ethereum contracts.
  - [JSDetox](https://github.com/svent/jsdetox) - A JavaScript malware analysis tool.
+ - [java-deobfuscator](https://github.com/java-deobfuscator/deobfuscator) - Java Deobfuscator for many popular java obfuscators (Stringer, ZKM, Allatori, etc)
+ - [Krakatau](https://github.com/Storyyeller/Krakatau) - Java decompiler, assembler, and disassembler (It can dissasemble any class even with ASM patch tricks)
  - [miasm](https://github.com/cea-sec/miasm) - Reverse engineering framework in Python.
  - [Objection](https://github.com/sensepost/objection) - Runtime mobile exploration.
  - [Online Assembler/Disassembler](http://shell-storm.org/online/Online-Assembler-and-Disassembler/) - Online wrappers around the Keystone and Capstone projects.
@@ -223,13 +149,13 @@ A lightweight, online service for when you don’t have the time, resources, or 
  - [Pwndbg](https://github.com/pwndbg/pwndbg) - Exploit Development and Reverse Engineering with GDB Made Easy.
  - [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset.
  - [Rizin](https://github.com/rizinorg/rizin) - Rizin is a fork of the radare2 reverse engineering framework with a focus on usability, working features and code cleanliness.
- - [Uncompyle](https://github.com/gstarnberger/uncompyle) -  A Python 2.7 byte-code decompiler (.pyc)
+ - [Recaf](https://github.com/Col-E/Recaf) - The modern Java bytecode editor
+ - [Uncompyle](https://github.com/gstarnberger/uncompyle) -  A Python 2.7 byte-code decompiler (.pyc) (Old)
+ - [pycdc](https://github.com/zrax/pycdc) - C++ python bytecode disassembler and decompiler
  - [WinDBG](http://www.windbg.org/) - Windows debugger distributed by Microsoft.
  - [Z3](https://github.com/Z3Prover/z3) - A theorem prover from Microsoft Research.
 
-## Steganography
-
-*Tools used for solving Stego challenges*
+# 📜 Steganography
 
  - [AperiSolve](https://aperisolve.fr/) - Platform which performs layer analysis on images.
  - [BPStegano](https://github.com/TapanSoni/BPStegano) - Python3 based LSB steganography.
@@ -266,10 +192,7 @@ A lightweight, online service for when you don’t have the time, resources, or 
  - [Stegsolve](https://github.com/zardus/ctf-tools/tree/master/stegsolve) - Apply various steganography techniques to images.
  - [Zsteg](https://github.com/zed-0xff/zsteg/) - PNG/BMP analysis.
 
-
-## Web 
-
-*Tools used for solving Web challenges*
+# </> Web 
 
  - [Arachni](https://www.arachni-scanner.com/) - Web Application Security Scanner Framework.
  - [Beautifier.io](https://beautifier.io/) - Online JavaScript Beautifier.
@@ -277,100 +200,25 @@ A lightweight, online service for when you don’t have the time, resources, or 
  - [Commix](https://github.com/commixproject/commix) - Automated All-in-One OS Command Injection Exploitation Tool.
  - [debugHunter](https://github.com/devploit/debugHunter) - Discover hidden debugging parameters and uncover web application secrets.
  - [Dirhunt](https://github.com/Nekmo/dirhunt) - Find web directories without bruteforce.
- - [dirsearch](https://github.com/maurosoria/dirsearch) - Web path scanner.
  - [nomore403](https://github.com/devploit/nomore403) - Tool to bypass 40x errors.
  - [ffuf](https://github.com/ffuf/ffuf) - Fast web fuzzer written in Go.
+ - [flask-unsign](https://github.com/Paradoxis/Flask-Unsign) - Command line tool to fetch, decode, brute-force and craft session cookies of a Flask application by guessing secret keys.
  - [git-dumper](https://github.com/arthaud/git-dumper) - A tool to dump a git repository from a website.
  - [Gopherus](https://github.com/tarunkant/Gopherus) - Tool that generates gopher link for exploiting SSRF and gaining RCE in various servers.
- - [Hookbin](https://hookbin.com/) - Free service that enables you to collect, parse, and view HTTP requests.
  - [JSFiddle](https://jsfiddle.net/) - Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.
  - [ngrok](https://ngrok.com/) - Secure introspectable tunnels to localhost.
  - [OWASP Zap](https://owasp.org/www-project-zap/) - Intercepting proxy to replay, debug, and fuzz HTTP requests and responses.
  - [PHPGGC](https://github.com/ambionics/phpggc) - Library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
  - [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) - Addon for chrome for debugging network requests.
- - [REQBIN](https://reqbin.com/) - Online REST & SOAP API Testing Tool.
- - [Request Bin](https://requestbin.com/) - A modern request bin to inspect any event by Pipedream.
+ - [Mockbin](https://mockbin.io/)) - Online REST & SOAP API Testing Tool, Free and OpenSource.
  - [Revelo](http://www.kahusecurity.com/posts/revelo_javascript_deobfuscator.html) - Analyze obfuscated Javascript code.
  - [Smuggler](https://github.com/defparam/smuggler) -  An HTTP Request Smuggling / Desync testing tool written in Python3.
  - [SQLMap](https://github.com/sqlmapproject/sqlmap) - Automatic SQL injection and database takeover tool.
+ - [SSTIMap](https://github.com/vladko312/SSTImap) - Automatic SSTI detection tool with interactive interface
  - [W3af](https://github.com/andresriancho/w3af) - Web application attack and audit framework.
  - [XSSer](https://xsser.03c8.net/) - Automated XSS testor.
  - [ysoserial](https://github.com/frohoff/ysoserial) - Tool for generating payloads that exploit unsafe Java object deserialization.
 
-# 0x02. Resources
+# 🔍 Osint
 
-## Online Platforms
-
-*Always online CTFs*
-
- - [0x0539](https://0x0539.net/) - Online CTF challenges.
- - [247CTF](https://247ctf.com/) - Free Capture The Flag Hacking Environment.
- - [Archive.ooo](https://archive.ooo/) - Live, playable archive of DEF CON CTF challenges.
- - [Atenea](https://atenea.ccn-cert.cni.es/) - Spanish CCN-CERT CTF platform.
- - [CTFlearn](https://ctflearn.com/) - Online platform built to help ethical hackers learn, practice, and compete.
- - [CTF365](https://ctf365.com/) - Security Training Platform.
- - [Crackmes.One](https://crackmes.one/) - Reverse Engineering Challenges.
- - [CryptoHack](https://cryptohack.org/) - Cryptography Challenges.
- - [Cryptopals](https://cryptopals.com/) - Cryptography Challenges.
- - [Defend the Web](https://defendtheweb.net/?hackthis) - An Interactive Cyber Security Platform.
- - [Dreamhack.io](https://dreamhack.io/wargame) - Online wargame.
- - [echoCTF.RED](https://echoctf.red/) - Online Hacking Laboratories.
- - [Flagyard](https://flagyard.com/) - An Online Playground of Hands-on Cybersecurity Challenges.
- - [HackBBS](https://hackbbs.org/index.php) - Online wargame.
- - [Hacker101](https://www.hacker101.com/) - CTF Platform by [HackerOne](https://www.hackerone.com/).
- - [Hackropole](https://hackropole.fr/en/) - This platform allows you to replay the challenges of the France Cybersecurity Challenge.
- - [HackTheBox](https://www.hackthebox.com/) - A Massive Hacking Playground.
- - [HackThisSite](https://www.hackthissite.org/) - Free, safe and legal training ground for hackers.
- - [HBH](https://hbh.sh/home) - Community designed to teach methods and tactics used by malicious hackers to access systems and sensitive information.
- - [Komodo](http://ctf.komodosec.com/) - This is a game designed to challenge your application hacking skills.
- - [MicroCorruption](https://microcorruption.com/) - Embedded Security CTF.
- - [MNCTF](https://mnctf.info/) - Online cybersecurity challenges.
- - [OverTheWire](https://overthewire.org/wargames/) - Wargame offered by the OverTheWire community.
- - [picoCTF](https://picoctf.org/) - Beginner-friendly CTF platform.
- - [Pwn.college](https://pwn.college/) - Education platform to learn about, and practice, core cybersecurity concepts.
- - [PWN.TN](https://pwn.tn/) - Educational and non commercial wargame.
- - [Pwnable.kr](http://pwnable.kr/) - Pwn/Exploiting platform.
- - [Pwnable.tw](https://pwnable.tw/) - Pwn/Exploiting platform.
- - [Pwnable.xyz](https://pwnable.xyz/) - Pwn/Exploiting platform.
- - [PWNChallenge](http://pwn.eonew.cn/) - Pwn/Exploiting platform.
- - [Reversing.kr](http://reversing.kr/) - Reverse Engineering platform.
- - [Root-me](https://www.root-me.org/) - CTF training platform.
- - [VibloCTF](https://ctf.viblo.asia/landing) - CTF training platform.
- - [VulnHub](https://www.vulnhub.com/) - VM-based pentesting platform.
- - [W3Challs](https://w3challs.com/) - Hacking/CTF platform.
- - [WebHacking](https://webhacking.kr/) - Web challenges platform.
- - [Websec.fr](http://websec.fr/) - Web challenges platform.
- - [WeChall](https://www.wechall.net/active_sites) - Challenge sites directory & forum.
- - [YEHD 2015](https://2015-yehd-ctf.meiji-ncc.tech/) - YEHD CTF 2015 online challenges.
-
-*Self-hosted CTFs*
-
- - [AWSGoat](https://github.com/ine-labs/AWSGoat) - A Damn Vulnerable AWS Infrastructure.
- - [CICD-goat](https://github.com/cider-security-research/cicd-goat) - A deliberately vulnerable CI/CD environment. Learn CI/CD security through multiple challenges.
- - [Damn Vulnerable Web Application](https://dvwa.co.uk/) - PHP/MySQL web application that is damn vulnerable.
- - [GCPGoat](https://github.com/ine-labs/GCPGoat) - A Damn Vulnerable GCP Infrastructure.
- - [Juice Shop](https://github.com/juice-shop/juice-shop-ctf) - Capture-the-Flag (CTF) environment setup tools for OWASP Juice Shop. 
-
-## Collaborative Tools
-
- - [CTFNote](https://github.com/TFNS/CTFNote) - Collaborative tool aiming to help CTF teams to organise their work.
-
-## Writeups Repositories
-
-*Repository of CTF Writeups*
-
- - [Courgettes.Club](https://ctf.courgettes.club/) - CTF Writeup Finder.
- - [CTFtime](https://ctftime.org/writeups) - CTFtime Writeups Collection.
- - [Github.com/CTFs](https://github.com/ctfs) - Collection of CTF Writeups.
-
-## Courses
-
- - [Roppers Bootcamp](https://www.roppers.org/courses/ctf) - CTF Bootcamp.
-
-# 0x03. Bibliography
-
-*The resources presented here have been gathered from numerous sources. However, the most important are:*
-
- - [apsdehal_awesome-ctf](https://github.com/apsdehal/awesome-ctf)
- - [vavkamil_awesome-bugbounty-tools](https://github.com/vavkamil/awesome-bugbounty-tools)
- - [zardus_ctf-tools](https://github.com/zardus/ctf-tools)
+- 🌐 [Shodan](https://www.shodan.io/) - Tool for generating payloads that exploit unsafe Java object deserialization.
